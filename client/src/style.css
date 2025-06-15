@@ -1,0 +1,49 @@
+.App {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.books{
+    display: flex;
+    gap: 10px;
+}
+
+.book{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+img {
+    width: 230px;
+    height: 320px;
+    object-fit: cover;
+    background-color: rgb(143, 248, 213);
+}
+
+button{
+    border: 1px solid #ff9292;
+}
+
+button:hover {
+    border: 1px solid transparent;
+    background-color: #ff9292;
+}
+
+.form {
+    height: 85%;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
