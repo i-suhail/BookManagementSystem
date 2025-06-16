@@ -29,11 +29,16 @@ const Books = ()=> {
 
     return(
         <div>
-            <center><h1>Suhail Book Shop</h1></center>
+            <div className="nav">
+                <div className="logo">Shaikh's Book Shop</div>
+            </div>
+            {/* <center><h1>Suhail Book Shop</h1></center> */}
             <div className="books">
                 {books.map((book)=>(
                     <div className="book" key={book.id}>
-                        {book.cover && <img src={book.cover} alt="" />}
+                        <div className="cvrimg">
+                            {book.cover && <img src={book.cover} alt="" />}
+                        </div>
                         <h2>{book.title}</h2>
                         <p>{book.desc}</p>
                         <span>₹ {book.price}</span>
@@ -42,7 +47,7 @@ const Books = ()=> {
                     </div>
                 ))}
             </div>
-            <button>
+            <button className="adbtn">
                 <Link to="/add">Add new Book</Link>
             </button>
         </div>
