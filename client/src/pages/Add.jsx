@@ -36,9 +36,7 @@ const Add = ()=> {
             <input type="text" placeholder='title' onChange={handleChange} name="title"/>
             <input type="text" placeholder='desc' onChange={handleChange} name="desc"/>
             <input type="number" placeholder='price' onChange={handleChange} name="price"/>
-            <input type="text" placeholder='cover' onChange={handleChange} name="cover"/>
-            {/* <input type="text" value={coverUrl} onChange={e => setCoverUrl(e.target.value)} placeholder="Paste image URL" /> */}
-            
+            <input type="text" placeholder='cover' onChange={handleChange} name="cover"/>           
             <button onClick={handleClick}>Add</button>
         </div>
     )
